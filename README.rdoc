@@ -14,4 +14,4 @@ A simple daemon to periodically check an IMAP folder and create a new TODO in th
 
 == Copyright
 
-Copyright (c) 2010-2012 Andrey Subbotin. See LICENSE for details.
+Copyright (c) 2012 Andrey Subbotin. See LICENSE for details.
