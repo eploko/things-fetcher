@@ -1,5 +1,5 @@
-require_relative '../fetcher'
-require_relative 'mail_handler'
+require 'fetcher'
+require 'things_fetcher/mail_handler'
 
 module ThingsFetcher
   class Fetcher

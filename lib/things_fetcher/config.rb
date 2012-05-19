@@ -1,6 +1,6 @@
 require 'yaml'
 
-require_relative '../keychain'
+require 'keychain'
 
 module ThingsFetcher
   class Config

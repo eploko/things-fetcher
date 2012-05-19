@@ -1,5 +1,5 @@
 (RUBY_VERSION < '1.9.0') ? require('system_timer') : require('timeout')
-require_relative 'plain_imap'
+require 'fetcher/plain_imap'
 
 module Fetcher
   class Imap < Base

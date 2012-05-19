@@ -17,5 +17,5 @@ module Fetcher
   end
 end
 
-require_relative 'fetcher/base'
-require_relative 'fetcher/imap'
+require 'fetcher/base'
+require 'fetcher/imap'

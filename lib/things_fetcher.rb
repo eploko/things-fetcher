@@ -1,2 +1,2 @@
-require_relative 'things_fetcher/config'
-require_relative 'things_fetcher/fetcher'
+require 'things_fetcher/config'
+require 'things_fetcher/fetcher'
