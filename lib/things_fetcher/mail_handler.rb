@@ -5,7 +5,6 @@ require 'osax'
 module ThingsFetcher
   class MailHandler
     def initialize(config)
-      super
       @config = config
     end
     

@@ -5,8 +5,6 @@ require 'keychain'
 module ThingsFetcher
   class Config
     def initialize(path)
-      super
-
       @data = default_config
       @data.merge! load_from_file(path)
     end

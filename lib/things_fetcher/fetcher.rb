@@ -4,7 +4,6 @@ require 'things_fetcher/mail_handler'
 module ThingsFetcher
   class Fetcher
     def initialize(config)
-      super
       @config = config
     end
     
