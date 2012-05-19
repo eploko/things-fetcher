@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'things_fetcher'
+
+# Main block
+
+def main
+  config = ThingsFetcher::Config.new("~/.things_fetcher")
+  fetcher = ThingsFetcher::Fetcher.new(config)
+  fetcher.run
+end
+
+# Aux methods
+
+main
