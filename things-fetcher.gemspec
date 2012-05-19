@@ -20,8 +20,10 @@ Gem::Specification.new do |s|
   s.default_executable = ["things-fetcher"]
   s.extra_rdoc_files = [
     "LICENSE",
-    "README.markdown"
+    "README.rdoc"
   ]
+  
+  s.add_development_dependency "rake"
   
   s.add_runtime_dependency "mail"
   s.add_runtime_dependency "rb-appscript"
