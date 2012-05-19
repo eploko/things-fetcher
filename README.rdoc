@@ -1,6 +1,21 @@
 = things-fetcher
 
-A simple daemon to periodically check an IMAP folder and create a new TODO in the Things app for each new message.
+A simple tool to fetch messages from an IMAP folder and create a new to-do item in the Things app for each.
+
+== Configuration
+
+The following options can be passed in the <tt>~/.things_fetcher</tt> file:
+
+[<tt>username</tt>] The username to authenticate with. You must specify one.
+[<tt>password</tt>] The password to authenticate with. Default is to use the Keychain.
+[<tt>server</tt>] The IP address or domain name of the IMAP server. Defaults to +imap.gmail.com+.
+[<tt>port</tt>] The port to connect to. Defaults to +993+.
+[<tt>ssl</tt>] Set to any value to use SSL encryption. Enabled by default.
+[<tt>use_login</tt>] Set to any value to use the LOGIN command instead of AUTHENTICATE. Some servers, like GMail, do not support AUTHENTICATE. Enabled by default.
+[<tt>in_folder</tt>] The name of the folder from which to read incoming mail. Defaults to +Things+.
+[<tt>error_folder</tt>] The name a folder to move mail that causes an error during processing. Defaults to +Things+.
+[<tt>list</tt>] The list in Things to create TODOs in. Defaults to +Inbox+.
+[<tt>tag_names</tt>] The tags to apply to the newly created TODOs. Defaults to +Texted+.
 
 == Note on Patches/Pull Requests
  
