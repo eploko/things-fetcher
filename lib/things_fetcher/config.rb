@@ -79,19 +79,6 @@ module ThingsFetcher
       def generate_config_file(path)
         File.open(path, "w") do |f|
           f << <<-EOS
-# The IP address or domain name of the IMAP server
-server: imap.gmail.com
-
-# The port to connect to (defaults to the standard port for the type of server)
-port: 993
-
-# Set to any value to use SSL encryption
-ssl: true
-
-# Set to any value to use the LOGIN command instead of AUTHENTICATE. 
-# Some servers, like GMail, do not support AUTHENTICATE (IMAP only).
-use_login: true
-
 # The username to authenticate with.
 # Uncoment and edit the following line.
 # username: email@domain.com
@@ -100,18 +87,31 @@ use_login: true
 # Leave the following line commented out to you the password stored in the Keychain.
 # Uncomment and edit otherwise.
 # password: somepassword
+          
+# The IP address or domain name of the IMAP server
+# server: imap.gmail.com
+
+# The port to connect to (defaults to the standard port for the type of server)
+# port: 993
+
+# Set to any value to use SSL encryption
+# ssl: true
+
+# Set to any value to use the LOGIN command instead of AUTHENTICATE. 
+# Some servers, like GMail, do not support AUTHENTICATE (IMAP only).
+# use_login: true
 
 # The name of the folder from which to read incoming mail (IMAP only). Defaults to INBOX.
-in_folder: Things
+# in_folder: Things
 
 # The name a folder to move mail that causes an error during processing (IMAP only). 
-error_folder: Things
+# error_folder: Things
 
 # The tags to apply to the newly created TODOs.
-tag_names: Texted
+# tag_names: Texted
 
 # The list in Things to create TODOs in.
-list: Inbox
+# list: Inbox
 EOS
         end
       end
