@@ -8,8 +8,9 @@ Say, you use Gmail. Say, you want all the mail with +[todo]+ in the subject fiel
 
 1. Create a filter so that all subject mails end up in the same folder/label.
 2. gem install things-fetcher
-3. Edit the config file at <tt>~/.things_fetcher</tt> to specify your email and so on.
-4. Run <tt>things-fetcher</tt> in Terminal.
+3. Run <tt>things-fetcher</tt> in Terminal to generate a default config file at <tt>~/.things_fetcher</tt>
+4. Edit the config file at <tt>~/.things_fetcher</tt> to specify your email and so on.
+5. Run <tt>things-fetcher</tt> in Terminal.
 
 Set up a cron task to run <tt>things-fetcher</tt> periodically.
 
