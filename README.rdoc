@@ -15,3 +15,10 @@ A simple daemon to periodically check an IMAP folder and create a new TODO in th
 == Copyright
 
 Copyright (c) 2012 Andrey Subbotin. See LICENSE for details.
+
+== The IMAP fetching code 
+
+Created by Dan Weinand and Luke Francl. Development supported by {Slantwise Design}[http://slantwisedesign.com].
+Licensed under the terms of the MIT License. Be excellent to each other.
+
+The original repo can be found at: https://github.com/look/fetcher
