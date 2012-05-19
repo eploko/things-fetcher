@@ -10,11 +10,18 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/eploko/things-fetcher"
   s.summary     = "Imports TODOs from IMAP to Things.app"
   s.description = "A simple daemon to periodically check an IMAP folder and create a new TODO in the Things app for each new message."
-
+  
   s.rubyforge_project = "things-fetcher"
 
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
+  
+  s.executables = ["things-fetcher"]
+  s.default_executable = ["things-fetcher"]
+  s.extra_rdoc_files = [
+    "LICENSE",
+    "README.markdown"
+  ]
   
   s.add_runtime_dependency "mail"
   s.add_runtime_dependency "rb-appscript"
