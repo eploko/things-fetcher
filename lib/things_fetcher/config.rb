@@ -79,6 +79,9 @@ module ThingsFetcher
       def generate_config_file(path)
         File.open(path, "w") do |f|
           f << <<-EOS
+# Any line that starts with a # is a comment.
+# Leave any of the configuration options commented out to use the default value.
+
 # The username to authenticate with.
 # Uncoment and edit the following line.
 # username: email@domain.com
