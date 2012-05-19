@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Andrey Subbotin"]
   s.email       = ["andrey@subbotin.me"]
   s.homepage    = "http://github.com/eploko/things-fetcher"
-  s.summary     = "Imports TODOs from IMAP to Things.app"
-  s.description = "A simple daemon to periodically check an IMAP folder and create a new TODO in the Things app for each new message."
+  s.summary     = "Imports to-dos from IMAP to Things.app"
+  s.description = "A simple daemon to periodically check an IMAP folder and create a new to-dos in the Things app for each new message."
   
   s.rubyforge_project = "things-fetcher"
 
