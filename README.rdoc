@@ -7,7 +7,7 @@ A simple tool to fetch messages from an IMAP folder and create a new to-do item 
 Say, you use Gmail. Say, you want all the mail with +[todo]+ in the subject field to be automatically routed to your Things' Inbox.
 
 1. Create a filter so that all subject mails end up in the same folder/label.
-2. gem install things-fetcher
+2. <tt>gem install things-fetcher</tt>
 3. Run <tt>things-fetcher</tt> in Terminal to generate a default config file at <tt>~/.things_fetcher</tt>
 4. Edit the config file at <tt>~/.things_fetcher</tt> to specify your email and so on.
 5. Run <tt>things-fetcher</tt> in Terminal.
